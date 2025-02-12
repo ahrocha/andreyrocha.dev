@@ -3,9 +3,9 @@
 return [
     [
         'title' => 'Este website',
-        'description' => 'Este website foi desenvolvido com Laravel, TailwindCSS, e Docker. Está hospedado num container dentro de uma instância EC2 na AWS.',
+        'description' => 'Este website foi desenvolvido com Laravel, Blade e TailwindCSS. Está hospedado sob a plataforma Plesk num servidor na DigitalOcean.',
         'link' => 'https://github.com/ahrocha/andreyrocha.dev',
-        'tags' => ['Laravel', 'TailwindCSS', 'Docker', 'AWS', 'EC2']
+        'tags' => ['Laravel', 'TailwindCSS', 'Blade', 'DigitalOcean', 'Plesk']
     ],
     [
         'title' => 'Blog Java e Spring',
