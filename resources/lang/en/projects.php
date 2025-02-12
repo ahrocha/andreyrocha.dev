@@ -37,4 +37,10 @@ return [
         'link' => 'https://www.abelaeobigode.com.br/',
         'tags' => ['WordPress', 'Docker', 'NGINX', 'AWS', 'Let’s Encrypt']
     ],
+    [
+        'title' => 'Social Network for ETFSP Alumni',
+        'description' => 'Originally developed in PHP 3, with MySQL database. Most of the initial structure is being maintained, updating only what is necessary to make it work.',
+        'link' => 'https://github.com/ahrocha/eletro-federal',
+        'tags' => ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript']
+    ],
 ];
