@@ -2,9 +2,16 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $locale = session('locale', config('app.locale'));
+    App::setLocale($locale);
+    $projects = trans('projects');
+    $cvData = trans('cv');
+// var_dump($cvData);die;
+    return view('home', compact('projects', 'locale', 'cvData'));
 });
 
 Route::get('/dashboard', function () {
@@ -17,4 +24,11 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+// require __DIR__.'/auth.php';
+
+Route::get('/lang/{locale}', function ($locale) {
+    if (in_array($locale, ['en', 'pt'])) {
+        session(['locale' => $locale]);
+    }
+    return redirect()->back();
+});
