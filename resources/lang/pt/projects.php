@@ -2,6 +2,12 @@
 
 return [
     [
+        'title' => 'Este website',
+        'description' => 'Este website foi desenvolvido com Laravel, TailwindCSS, e Docker. Está hospedado num container dentro de uma instância EC2 na AWS.',
+        'link' => 'https://github.com/ahrocha/andreyrocha.dev',
+        'tags' => ['Laravel', 'TailwindCSS', 'Docker', 'AWS', 'EC2']
+    ],
+    [
         'title' => 'Blog Java e Spring',
         'description' => 'Blog feito utilizando Java, Spring, MySQL, Docker, NGINX, AWS, AWS EC2.',
         'link' => 'https://github.com/ahrocha/feijoadaweek-site-spring',

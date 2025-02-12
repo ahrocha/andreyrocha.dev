@@ -2,6 +2,12 @@
 
 return [
     [
+        'title' => 'This website',
+        'description' => 'This website was developed using Laravel, TailwindCSS, and Docker. It is hosted in a container inside an EC2 instance on AWS.',
+        'link' => 'https://github.com/ahrocha/andreyrocha.dev',
+        'tags' => ['Laravel', 'TailwindCSS', 'Docker', 'AWS', 'EC2']
+    ],
+    [
         'title' => 'Java and Spring Blog',
         'description' => 'Blog built using Java, Spring, MySQL, Docker, NGINX, AWS, and AWS EC2.',
         'link' => 'https://github.com/ahrocha/feijoadaweek-site-spring',
