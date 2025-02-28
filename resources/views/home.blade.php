@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ __('name') }}</title>
+    <title>{{ __('shared.name') }}</title>
     @vite(['resources/css/app.css'])
 </head>
 <body class="bg-gray-100 text-gray-900">
@@ -11,8 +11,8 @@
     <h1 class="text-xl font-bold mb-4">{{ $cvData['name'] }}</h1>
 
     <h2 class="text-xl font-semibold mt-4">{{ __('messages.change_language') }}</h2>
-    <a href="{{ url('/lang/pt') }}">Português</a> | 
-    <a href="{{ url('/lang/en') }}">English</a>
+    <a href="{{ url('/lang/pt') }}" class="{{ app()->getLocale() == 'pt' ? 'active' : 'available' }}">Português</a> | 
+    <a href="{{ url('/lang/en') }}" class="{{ app()->getLocale() == 'en' ? 'active' : 'available' }}">English</a>
 
     <h2 class="text-xl font-semibold mt-4">{{ __('messages.contact') }}</h2>
     <p>Email: {{ $cvData['contact']['email'] }}</p>

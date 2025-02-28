@@ -10,7 +10,7 @@ Route::get('/', function () {
     App::setLocale($locale);
     $projects = trans('projects');
     $cvData = trans('cv');
-// var_dump($cvData);die;
+
     return view('home', compact('projects', 'locale', 'cvData'));
 });
 
